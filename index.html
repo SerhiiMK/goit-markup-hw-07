@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta mame="wiewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Studio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
@@ -26,6 +27,13 @@
           <a href="./index.html">
             <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
           >
+          <button type="button" class="button-mobil is-open" data-menu-button>
+                <svg width="32" hight="22" aria-label="mobile menu switch">
+                  <use class="modal-close-svg" href="./img/webstudio-svg.svg#button-close"></use>
+                  <use class="modal-menu-svg" href="./img/webstudio-svg.svg#modal-menu"></use>
+                </svg>
+              </button>    
+              
           <ul class="nav-transition list">
             <li class="item">
               <a class="transition link-line underline" href="./index.html">Studio</a>
