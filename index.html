@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta mame="wiewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta mame="wiewport" content="width=device-width, initial-scale=1.0" /> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
@@ -27,13 +27,6 @@
           <a href="./index.html">
             <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
           >
-          <button type="button" class="button-mobil is-open" data-menu-button>
-                <svg width="32" hight="22" aria-label="mobile menu switch">
-                  <use class="modal-close-svg" href="./img/webstudio-svg.svg#button-close"></use>
-                  <use class="modal-menu-svg" href="./img/webstudio-svg.svg#modal-menu"></use>
-                </svg>
-              </button>    
-              
           <ul class="nav-transition list">
             <li class="item">
               <a class="transition link-line underline" href="./index.html">Studio</a>
@@ -46,12 +39,80 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="button-mobil is-open js-open-menu">
+          <svg class="button-mobil-svg" width="32" hight="22" aria-label="mobile menu switch">
+            <use class="modal-menu-svg" href="./img/webstudio-svg.svg#modal-menu"></use>
+          </svg>
+        </button>
         <ul class="contacts-style-item">
           <li class="list item">
             <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li class="list item">
             <a class="contacts" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </div>
+      <!-- --------------mobil-modal------- -->
+      <div class="container mobil-modal js-menu-container">
+        <button type="button" class="button-mobil-close js-close-menu">
+          <svg class="button-mobil-svg" width="32" hight="22" aria-label="mobile menu switch">
+            <use class="modal-close-svg" href="./img/webstudio-svg.svg#button-close"></use>
+          </svg>
+        </button>
+        <ul class="mobil-modal-transition list">
+          <li class="mobil-modal-transition-item">
+            <a class="mobil-modal-transition-link link-line underline" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mobil-modal-transition-item">
+            <a class="mobil-modal-transition-link link-line" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobil-modal-transition-item">
+            <a class="mobil-modal-transition-link link-line" href="#">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mobil-modal-mailtel">
+          <li class="mobil-modal-mailtel-list item">
+            <a class="mobil-modal-mailtel-contacts" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobil-modal-mailtel-list item">
+            <a class="mobil-modal-mailtel-contacts" href="tel:+11(000)111-11-11"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+        <ul class="list social-network-list">
+          <li>
+            <a class="social-network" href="https://www.instagram.com">
+              <svg class="workers-data-icon">
+                <use href="./img/webstudio-svg.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network" href="https://www.twitter.com/">
+              <svg class="workers-data-icon">
+                <use href="./img/webstudio-svg.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network" href="https://www.facebook.com">
+              <svg class="workers-data-icon">
+                <use href="./img/webstudio-svg.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network" href="https://www.linkedin.com">
+              <svg class="workers-data-icon">
+                <use href="./img/webstudio-svg.svg#linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -134,18 +195,17 @@
                 </div>
               </form>
               <div class="modal-privacypolicy modal-forme">
-                <label class="modal-privacypolicy-label" for="privacypolicy"
-                  >
+                <label class="modal-privacypolicy-label" for="privacypolicy">
                   <input
-                  class="modal-privacypolicy-input"
-                  type="checkbox"
-                  name="acceptance-privacy-policy"
-                  value="privacypolicy"
-                  id="privacypolicy"
-                />
+                    class="modal-privacypolicy-input"
+                    type="checkbox"
+                    name="acceptance-privacy-policy"
+                    value="privacypolicy"
+                    id="privacypolicy"
+                  />
                   <svg class="modal-privacypolicy-label-svg">
-                  <use href="./img/webstudio-svg.svg#click-chek"></use>
-                </svg>
+                    <use href="./img/webstudio-svg.svg#click-chek"></use>
+                  </svg>
                   I accept the terms and conditions of the</label
                 >
                 <a class="modal-privacypolicy-link" href="#">Privacy Policy</a>
