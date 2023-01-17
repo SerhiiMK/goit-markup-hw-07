@@ -123,13 +123,13 @@ header .container {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1168px;
+    width: 1158px;
   }
 }
 
@@ -184,7 +184,6 @@ header .container {
 
 /* -----------------mobil-header----------------- */
 @media screen and (max-width: 767px) {
-  
   .nav-transition {
     display: none;
   }
@@ -349,9 +348,16 @@ header .container {
   transition-timing-function: var(--cubic-bezier);
 }
 
+/* @media screen and (max-width: 768px) {
+.nav-trobiansition {
+  display: none;
+}
+
+} */
 @media screen and (min-width: 768px) {
-.navigation-style {
-  display: flex;}
+  .navigation-style {
+    display: flex;
+  }
 
   .mobil-modal {
     display: none;
@@ -929,7 +935,7 @@ header .container {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     padding-bottom: 108px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../img/hero-img/hero-tablet.jpg');
@@ -956,7 +962,7 @@ header .container {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1440px;
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -1217,17 +1223,18 @@ header .container {
 .teem-workers-flex {
   display: flex;
   gap: 24px;
-  /* margin-top: 72px; */
+  margin-top: 72px;
   justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
+  .teem-workers-flex {
+    justify-content: center;
+  }
   .section-teem-workers {
     flex-wrap: nowrap;
-
   }
-  
-  
+
   .workers-bg-color {
     margin-left: 10px;
     margin-right: auto;
@@ -1239,8 +1246,7 @@ header .container {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  
-  .workers-bg-color:not(:nth-last-child(-n+2)) {
+  .workers-bg-color:not(:nth-last-child(-n + 2)) {
     margin-bottom: 64px;
   }
 
@@ -1293,11 +1299,11 @@ header .container {
   margin-bottom: 72px;
 }
 
-  .customers-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
 .customers-list .item {
   flex-basis: calc((100% - 120px) / 6);
@@ -1375,7 +1381,7 @@ header .container {
     gap: 22px;
   }
 }
-/* -----------portfilio--------------------------------- */
+/* -----------portfolio--------------------------------- */
 
 .portfolio-style {
   padding-top: 96px;
@@ -1692,7 +1698,6 @@ filter {
 }
 
 @media screen and (min-width: 768px) {
-
   .footer-logo-text {
     display: flex;
     gap: 24px;
@@ -1709,8 +1714,8 @@ filter {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-tablet {
-    flex-wrap: wrap; 
+  .footer-tablet .container {
+    flex-wrap: wrap;
     width: 565px;
     /* padding-left: 92px;
     padding-right: 92px; */
@@ -1718,6 +1723,10 @@ filter {
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
   .end-page {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -1742,6 +1751,9 @@ filter {
 }
 
 @media screen and (max-width: 767px) {
+  .end-page {
+    justify-content: center;
+  }
   .center-text {
     display: flex;
     justify-content: center;
@@ -1792,6 +1804,11 @@ filter {
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    flex-wrap: nowrap; 
+    flex-direction: row;
+  }
+  
   .end-page {
     padding-top: 100px;
     padding-bottom: 100px;
