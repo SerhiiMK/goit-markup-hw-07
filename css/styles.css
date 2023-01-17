@@ -114,7 +114,8 @@ header .container {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  header .container {
+    display: flex;
     width: 428px;
     margin-left: auto;
     margin-right: auto;
@@ -349,6 +350,9 @@ header .container {
 }
 
 @media screen and (min-width: 768px) {
+.navigation-style {
+  display: flex;}
+
   .mobil-modal {
     display: none;
   }
@@ -1218,6 +1222,12 @@ header .container {
 }
 
 @media screen and (max-width: 767px) {
+  .section-teem-workers {
+    flex-wrap: nowrap;
+
+  }
+  
+  
   .workers-bg-color {
     margin-left: 10px;
     margin-right: auto;
@@ -1649,6 +1659,7 @@ filter {
 }
 
 .end-page > .container {
+  flex-direction: column;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1681,6 +1692,7 @@ filter {
 }
 
 @media screen and (min-width: 768px) {
+
   .footer-logo-text {
     display: flex;
     gap: 24px;
@@ -1698,8 +1710,10 @@ filter {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-tablet {
-    padding-left: 92px;
-    padding-right: 92px;
+    flex-wrap: wrap; 
+    width: 565px;
+    /* padding-left: 92px;
+    padding-right: 92px; */
   }
 }
 
