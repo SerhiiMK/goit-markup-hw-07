@@ -38,7 +38,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="button-mobil js-open-menu">
+        <button type="button" class="button-mobil .js-open-menu">
           <svg class="button-mobil-svg" aria-label="mobile menu switch">
             <use class="modal-menu-svg" href="./img/webstudio-svg.svg#modal-menu"></use>
           </svg>
@@ -54,7 +54,7 @@
       </div>
       <!-- --------------mobil-modal------- -->
       <div class="container mobil-modal js-menu-container">
-        <button type="button" class="button-mobil-close js-close-menu">
+        <button type="button" class="button-mobil-close .js-close-menu">
           <svg class="hero-close-link" aria-label="mobile menu switch">
             <use class="modal-close-svg" href="./img/webstudio-svg.svg#button-close"></use>
           </svg>
@@ -255,28 +255,106 @@
           <h2 class="job-profile">What are we doing</h2>
           <ul class="list job-profile-img">
             <li class="item-job">
-              <img
-                src="./img/mac.jpg"
-                alt="view of the application on the computer"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <img
+                  src="./img/mac.jpg"
+                  alt="view of the application on the computer"
+                  width="360"
+                  height="300"
+                />
+                <source
+                  srcset="
+                    ./img/works/work1.jpg    1x,
+                    ./img/works/work1@2x.jpg 2x,
+                    ./img/works/work1@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/work1.jpg    1x,
+                    ./img/works/work1@2x.jpg 2x,
+                    ./img/works/work1@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/work1.jpg    1x,
+                    ./img/works/work1@2.jpg  2x,
+                    ./img/works/work1@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
             </li>
             <li class="item-job">
               <img
-                src="./img/phone.jpg"
+                src="./img/works/work2.jpg"
                 alt="view of the application on a smartphone"
                 width="360"
                 height="300"
               />
+              <picture>
+                <source
+                  srcset="
+                    ./img/works/work2.jpg    1x,
+                    ./img/works/work2@2x.jpg 2x,
+                    ./img/works/work2@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/work2.jpg    1x,
+                    ./img/works/work2@2x.jpg 2x,
+                    ./img/works/work2@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/work2.jpg    1x,
+                    ./img/works/work2@2x.jpg 2x,
+                    ./img/works/work2@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
             </li>
             <li class="item-job">
               <img
-                src="./img/laptop-and-phone.jpg"
+                src="./img/works/work3.jpg"
                 alt="displaying the application on the phone and laptop"
                 width="360"
                 height="300"
               />
+              <picture>
+                <source
+                  srcset="
+                    ./images/works/work3.jpg    1x,
+                    ./images/works/work3@2x.jpg 2x,
+                    ./images/works/work3@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/works/work3.jpg    1x,
+                    ./images/works/work3@2x.jpg 2x,
+                    ./images/works/work3@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/works/work3.jpg    1x,
+                    ./img/works/work3@2x.jpg 2x,
+                    ./img/works/work3@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -285,13 +363,39 @@
         <div class="container">
           <h2 class="teem-workers">Our Team</h2>
           <ul class="list teem-workers-flex">
-            <li class="workers-bg-color">
+            <li class="workers-bg-color border">
               <img
-                src="./img/mark-guerrero-photo.jpg"
+                src="./img/our-team/photo1.jpg"
                 alt="photo Mark Guerrero, Product Designer"
                 width="264"
                 height="260"
               />
+              <picture>
+                <source
+                  srcset="
+                    ./img/our-team/photo1.jpg    1x,
+                    ./img/our-team/photo1@2x.jpg 2x,
+                    ./img/our-team/photo1@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/photo1.jpg    1x,
+                    ./images/our-team/photo1@2x.jpg 2x,
+                    ./images/our-team/photo1@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/photo1.jpg    1x,
+                    ./images/our-team/photo1@2x.jpg 2x,
+                    ./images/our-team/photo1@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
               <div class="workers-data">
                 <h3 class="workers">Mark Guerrero</h3>
                 <p class="position-workers">Product Designer</p>
@@ -329,11 +433,37 @@
             </li>
             <li class="workers-bg-color">
               <img
-                src="./img/tom-ford-photo.jpg"
+                src="./img/our-team/photo2.jpg"
                 alt="photo Tom Ford, Frontend Developer"
                 width="264"
                 height="260"
               />
+              <picture>
+                <source
+                  srcset="
+                    ./img/our-team/photo2.jpg    1x,
+                    ./img/our-team/photo2@2x.jpg 2x,
+                    ./img/our-team/photo2@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/photo2.jpg    1x,
+                    ./img/our-team/photo2@2x.jpg 2x,
+                    ./img/our-team/photo2@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/photo2.jpg    1x,
+                    ./img/our-team/photo2@2x.jpg 2x,
+                    ./img/our-team/photo2@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
               <div class="workers-data">
                 <h3 class="workers">Tom Ford</h3>
                 <p class="position-workers">Frontend Developer</p>
@@ -371,11 +501,37 @@
             </li>
             <li class="workers-bg-color">
               <img
-                src="./img/camila-garcia-photo.jpg"
+                src="./img/our-team/photo3.jpg"
                 alt="photo Camila Garcia, Marketing"
                 width="264"
                 height="260"
               />
+              <picture>
+                <source
+                  srcset="
+                    ./img/our-team/photo3.jpg    1x,
+                    ./img/our-team/photo3@2x.jpg 2x,
+                    ./img/our-team/photo3@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/photo3.jpg    1x,
+                    ./img/our-team/photo3@2x.jpg 2x,
+                    ./img/our-team/photo3@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/photo3.jpg    1x,
+                    ./img/our-team/photo3@2x.jpg 2x,
+                    ./img/our-team/photo3@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
               <div class="workers-data">
                 <h3 class="workers">Camila Garcia</h3>
                 <p class="position-workers">Marketing</p>
@@ -413,11 +569,37 @@
             </li>
             <li class="workers-bg-color">
               <img
-                src="./img/daniel-wilson-photo.jpg"
+                src="./img/our-team/photo4.jpg"
                 alt="photo Daniel Wilson, UI Designer"
                 width="264"
                 height="260"
               />
+              <picture>
+                <source
+                  srcset="
+                    ./img/our-team/photo4.jpg    1x,
+                    ./img/our-team/photo4@2x.jpg 2x,
+                    ./img/our-team/photo4@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/photo4.jpg    1x,
+                    ./img/our-team/photo4@2x.jpg 2x,
+                    ./img/our-team/photo4@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/our-team/photo4.jpg    1x,
+                    ./img/our-team/photo4@2x.jpg 2x,
+                    ./img/our-team/photo4@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+              </picture>
               <div class="workers-data">
                 <h3 class="workers">Daniel Wilson</h3>
                 <p class="position-workers">UI Designer</p>
@@ -507,7 +689,7 @@
       </section>
     </main>
     <footer class="end-page footer-tablet footer-content">
-      <div class="container footer-content footer-tablet">
+      <div class="container footer-content-logo footer-tablet">
         <div class="footer-logo-text">
           <div class="footer-content-logo-text">
             <a class="center-text" href="./index.html ">
@@ -520,7 +702,7 @@
           </div>
         </div>
         <div class="social-media">
-          <h3 class="social-media-text">Social media</h3>
+          <h3 class="social-media-text center-text">Social media</h3>
           <ul class="list social-media-list">
             <li>
               <a class="social-media-footer" href="https://www.instagram.com">
@@ -553,7 +735,7 @@
           </ul>
         </div>
         <div class="subscribe-footer">
-          <p class="subscribe-label-title">Subscribe</p>
+          <p class="subscribe-label-title center-text">Subscribe</p>
           <form class="subscribe-button-form">
             <label class="subscribe-label-title" for="subscrib-email"></label>
             <input
@@ -576,6 +758,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
