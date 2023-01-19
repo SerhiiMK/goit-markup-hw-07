@@ -19,24 +19,32 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="primary-style">
-    <header class="header-shadow header-style">
-      <div class="container">
-        <nav class="navigation-style">
-          <a href="./index.html">
-            <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
-          >
+    <header class="header-style header-shadow">
+      <div class="container logoburger">
+
+            <a href="./index.html">
+              <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
+            >
+            
+
           <ul class="nav-transition list">
             <li class="item">
-              <a class="transition link-line" href="./index.html">Studio</a>
+              <a class="transition link-line underline" href="./index.html">Studio</a>
             </li>
             <li class="item">
-              <a class="transition link-line underline" href="./portfolio.html">Portfolio</a>
+              <a class="transition link-line" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="item">
               <a class="transition link-line" href="#">Contacts</a>
             </li>
           </ul>
+          <button type="button" class="button-mobil js-open-menu">
+              <svg class="button-mobil-svg" aria-label="mobile menu switch">
+                <use class="modal-menu-svg" href="./img/webstudio-svg.svg#modal-menu"></use>
+              </svg>
+            </button>
         </nav>
+
         <ul class="contacts-style-item">
           <li class="list item">
             <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -46,7 +54,69 @@
           </li>
         </ul>
       </div>
-      <div class="header-shadow"></div>
+      <!-- --------------mobil-modal------- -->
+      <div class="mobil-modal js-menu-container">
+        <button type="button" class="button-mobil-close js-close-menu">
+          <svg class="hero-close-link" aria-label="mobile menu switch">
+            <use class="modal-close-svg" href="./img/webstudio-svg.svg#button-close"></use>
+          </svg>
+        </button>
+        <ul class="mobil-modal-transition list">
+          <li class="mobil-modal-transition-item">
+            <a class="mobil-modal-transition-link link-line underline" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mobil-modal-transition-item">
+            <a class="mobil-modal-transition-link link-line active-page" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobil-modal-transition-item">
+            <a class="mobil-modal-transition-link link-line" href="#">Contacts</a>
+          </li>
+        </ul>
+        <ul class="list mobil-modal-mailtel">
+          <li class="mobil-modal-mailtel-list item">
+            <a class="mobil-modal-mailtel-tel" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobil-modal-mailtel-list item">
+            <a class="mobil-modal-mailtel-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="list social-network-list">
+          <li>
+            <a class="social-network" href="https://www.instagram.com">
+              <svg class="workers-data-icon">
+                <use href="./img/webstudio-svg.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network" href="https://www.twitter.com/">
+              <svg class="workers-data-icon">
+                <use href="./img/webstudio-svg.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network" href="https://www.facebook.com">
+              <svg class="workers-data-icon">
+                <use href="./img/webstudio-svg.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-network" href="https://www.linkedin.com">
+              <svg class="workers-data-icon">
+                <use href="./img/webstudio-svg.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="portfolio-style">
@@ -319,5 +389,7 @@
         </div>
       </div>
     </footer>
+        <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
