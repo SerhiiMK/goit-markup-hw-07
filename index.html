@@ -21,12 +21,14 @@
   </head>
   <body class="primary-style">
     <header class="header-style header-shadow">
-      <div class="container">
-        <nav class="navigation-style">
-          <a href="./index.html">
-            <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
-          >
-          <ul class="nav-trobiansition list">
+      <div class="container logoburger">
+
+            <a href="./index.html">
+              <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
+            >
+            
+
+          <ul class="nav-transition list">
             <li class="item">
               <a class="transition link-line underline" href="./index.html">Studio</a>
             </li>
@@ -37,12 +39,13 @@
               <a class="transition link-line" href="#">Contacts</a>
             </li>
           </ul>
+          <button type="button" class="button-mobil js-open-menu">
+              <svg class="button-mobil-svg" aria-label="mobile menu switch">
+                <use class="modal-menu-svg" href="./img/webstudio-svg.svg#modal-menu"></use>
+              </svg>
+            </button>
         </nav>
-        <button type="button" class="button-mobil js-open-menu">
-          <svg class="button-mobil-svg" aria-label="mobile menu switch">
-            <use class="modal-menu-svg" href="./img/webstudio-svg.svg#modal-menu"></use>
-          </svg>
-        </button>
+
         <ul class="contacts-style-item">
           <li class="list item">
             <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -74,7 +77,7 @@
             <a class="mobil-modal-transition-link link-line" href="#">Contacts</a>
           </li>
         </ul>
-        <ul class=" list mobil-modal-mailtel">
+        <ul class="list mobil-modal-mailtel">
           <li class="mobil-modal-mailtel-list item">
             <a class="mobil-modal-mailtel-tel" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
           </li>
@@ -216,7 +219,7 @@
         </div>
       </section>
       <section class="description">
-        <div class="container">
+        <div class="container-description">
           <h2 class="visually-hidden">Description</h2>
           <ul class="title-list list">
             <li class="list-item antenna">
