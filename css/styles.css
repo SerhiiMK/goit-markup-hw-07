@@ -366,8 +366,8 @@ header .container {
   height: 8px;
 }
 
-.button-hero-close:hover,
-.button-hero-close:focus {
+.button-modal-close:hover,
+.button-modal-close:focus {
   fill: #e7e9fc;
   background-color: var(--button-hero-active);
 }
