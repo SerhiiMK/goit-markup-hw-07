@@ -111,8 +111,6 @@ header .container {
   justify-content: space-between;
 }
 
-
-
 .logo-web {
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
@@ -167,8 +165,8 @@ header .container {
 }
 /* -------------------HEADER MOBIL -------------------- */
 @media screen and (max-width: 767px) {
-   
-    .container: { width: 767px; 
+  .container: {
+    width: 767px;
   }
 
   .nav-transition {
@@ -191,7 +189,6 @@ header .container {
     width: 100%;
     height: 70px;
   }
- 
 }
 
 /* -------------------AND HEADER MOBIL -------------------- */
@@ -202,19 +199,16 @@ header .container {
   .button-mobil {
     display: none;
   }
-  
+
   eader .container {
     width: 736px;
   }
-  
 
-   .header-style .container {
-  display: flex;
-  align-items: center;
+  .header-style .container {
+    display: flex;
+    align-items: center;
+  }
 
-}
-
-  
   .nav-transition .item + .item {
     /* margin-left: 40px; */
   }
@@ -329,26 +323,29 @@ header .container {
 /* ------------------DESCTOP HEADER----------------- */
 
 @media screen and (min-width: 1200px) {
-.container {
+  .container {
     width: 1158px;
   }
-  
+
+  header .logo-trans-contacts {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 70px;
+    max-width: 1158px;
+  }
+
+  .contacts-style-item {
+    flex-direction: row;
+  }
+
   header .container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  max-width: 1158px;
-}
- 
- header .logo-trans-contacts {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-  max-width: 1158px;
-}
- 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    max-width: 1158px;
+  }
 
   .button-mobil {
     display: none;
@@ -364,11 +361,19 @@ header .container {
 
   .contacts-style-item {
     display: flex;
-    flex-direction: column;
     margin-top: 24px;
     margin-bottom: 10px;
     margin-left: auto;
   }
+/* ------------- */
+  .contacts-style-item {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 40px;
+}
+/* ----------- */
   .navigation-style {
     color: var(--navyblue);
     font: var(--primary-font), sans-serif;
@@ -466,7 +471,7 @@ header .container {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .contacts-style-item {
     flex-direction: none;
     margin-left: 0;
@@ -478,15 +483,14 @@ header .container {
     justify-content: center;
   }
 
-    .contacts:hover,
+  .contacts:hover,
   .contacts:focus {
     color: var(--irish);
   }
 
-   .contacts-style-item .item + .item {
+  .contacts-style-item .item + .item {
     margin-left: 40px;
   }
-  
 }
 
 /* -------------------AND HEADER DESCTOP -------------------- */
@@ -1061,8 +1065,9 @@ header .container {
   .hero-text {
     font-size: 36px;
     line-height: 1.11;
-    width: 320px;
+    max-width: 320px;
   }
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -1344,22 +1349,23 @@ header .container {
   justify-content: center;
 }
 
-/* ------------------AND mobil Our Team----------------- */
-
-/* ------------------ TABLET Our Team----------------- */
 
 @media screen and (max-width: 767px) {
   .teem-workers-flex {
     justify-content: center;
     flex-wrap: wrap;
-  }
-
-  .workers-bg-color:not(:last-child) {
     margin-bottom: 72px;
   }
+
+  /* .workers-bg-color:not(:last-child) {
+    margin-bottom: 72px;
+  } */
 }
 
-/* ------------------AND TABLET Our Team----------------- */
+/* ------------------AND mobil Our Team----------------- */
+
+/* ------------------ TABLET Our Team----------------- */
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .workers-bg-color:not(:nth-last-child(-n + 2)) {
     margin-bottom: 64px;
@@ -1391,6 +1397,7 @@ header .container {
     margin-right: 24px;
   }
 }
+/* ------------------AND TABLET Our Team----------------- */
 /* ------------------DESCTOP Our Team----------------- */
 
 @media screen and (min-width: 1200px) {
@@ -1517,7 +1524,6 @@ header .container {
   .customers-list-icon-link:not(:nth-last-child(-n + 2)) {
     margin-bottom: 72px;
   }
-
   .customers-list-icon-link:nth-child(2n + 1) {
     margin-right: 16px;
   }
@@ -1574,7 +1580,7 @@ header .container {
 .end-page > .container {
   display: flex;
   flex-direction: row;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* display: flex;
   flex-wrap: wrap; */
 }
@@ -1724,22 +1730,18 @@ header .container {
 
 /* ------------------AND MOBIL FOOOTER--------------- */
 @media screen and (max-width: 767px) {
+  .end-page > .container {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
   .possibility {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  /* .fend-page-text {
-    display: block;
-    justify-content: center;
-    align-items: center;
-  
-  } */
-
-  /* .center-text {
-
-  } */
 
   .center-text {
     display: flex;
@@ -1781,6 +1783,13 @@ header .container {
 /* ------------------TABLET FOOOTER--------------- */
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .end-page > .container {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
   .footer-tab-content {
     width: 453px;
     height: 80px;
@@ -1828,23 +1837,35 @@ header .container {
 }
 
 /* ------------------AND TABLET FOOOTER--------------- */
+/* ------------------DESCTOP FOOOTER--------------- */
 @media screen and (min-width: 1200px) {
   .end-page {
-    margin-left: 0;
+    /* position: relative; */
+    
+    /* position: absolute;
+  display: inline-block; */
+    /* margin-left: 0;
     margin-right: 0;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 0; */
   }
+
   .subscribe-label-input {
     width: 264px;
+    /* position: absolute; */
   }
   /* .social-media {
     margin-left: 120px;
   } */
 
   .subscribe-footer {
-    margin-left: 80px;
-    padding: 0;
+    /* position: absolute; */
+    margin-top: 140px;
+    margin-bottom: 130px;
+    margin-left: 828px;
+    margin-right: 348px;
+    /* margin-left: 80px;
+    padding: 0; */
   }
 
   .subscribe-button-form {
@@ -1860,8 +1881,13 @@ header .container {
   .footer-tablet {
     display: flex;
   }
+
+  .footer-content-logo{
+    display: flex;
+    align-items: baseline;
 }
-/* ------------------DESCTOP FOOOTER--------------- */
+}
+
 /* ------------------AND DESCTOP FOOOTER--------------- */
 
 /* ------------------------------------------------------------
@@ -1988,7 +2014,7 @@ header .container {
 }
 
 .portfolio-flex > .card {
-  margin-left: 24px;
+  margin-left: 22px;
   margin-top: 48px;
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
