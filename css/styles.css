@@ -365,15 +365,15 @@ header .container {
     margin-bottom: 10px;
     margin-left: auto;
   }
-/* ------------- */
+  /* ------------- */
   .contacts-style-item {
     margin-left: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     gap: 40px;
-}
-/* ----------- */
+  }
+  /* ----------- */
   .navigation-style {
     color: var(--navyblue);
     font: var(--primary-font), sans-serif;
@@ -1067,7 +1067,6 @@ header .container {
     line-height: 1.11;
     max-width: 320px;
   }
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -1348,7 +1347,6 @@ header .container {
   margin-top: 72px;
   justify-content: center;
 }
-
 
 @media screen and (max-width: 767px) {
   .teem-workers-flex {
@@ -1731,12 +1729,12 @@ header .container {
 /* ------------------AND MOBIL FOOOTER--------------- */
 @media screen and (max-width: 767px) {
   .end-page > .container {
-  display: flex;
-  flex-direction: row;
-  flex-direction: column;
-  /* display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    /* display: flex;
   flex-wrap: wrap; */
-}
+  }
   .possibility {
     display: flex;
     justify-content: center;
@@ -1784,12 +1782,12 @@ header .container {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .end-page > .container {
-  display: flex;
-  flex-direction: row;
-  flex-direction: column;
-  /* display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    /* display: flex;
   flex-wrap: wrap; */
-}
+  }
   .footer-tab-content {
     width: 453px;
     height: 80px;
@@ -1839,9 +1837,30 @@ header .container {
 /* ------------------AND TABLET FOOOTER--------------- */
 /* ------------------DESCTOP FOOOTER--------------- */
 @media screen and (min-width: 1200px) {
+  .logosocial {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-logo-text {
+    margin-right: 120px;
+  }
+
+  .social-media-text {
+    margin-bottom: 16px;
+  }
+
+  .social-media {
+    margin-right: 80px;
+  }
+
+  .subscribe-label-input {
+    margin-right: 24px;
+  }
+
   .end-page {
     /* position: relative; */
-    
+
     /* position: absolute;
   display: inline-block; */
     /* margin-left: 0;
@@ -1859,13 +1878,6 @@ header .container {
   } */
 
   .subscribe-footer {
-    /* position: absolute; */
-    margin-top: 140px;
-    margin-bottom: 130px;
-    margin-left: 828px;
-    margin-right: 348px;
-    /* margin-left: 80px;
-    padding: 0; */
   }
 
   .subscribe-button-form {
@@ -1882,10 +1894,10 @@ header .container {
     display: flex;
   }
 
-  .footer-content-logo{
+  .footer-content-logo {
     display: flex;
     align-items: baseline;
-}
+  }
 }
 
 /* ------------------AND DESCTOP FOOOTER--------------- */
