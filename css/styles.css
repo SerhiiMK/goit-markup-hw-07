@@ -813,18 +813,18 @@ header .container {
   border-color: none;
 }
 
-/* @media screen and (min-width: 408px) {
+@media screen and (min-width: 767px) and () {
   .modal {
-    max-width: 408px;
+    width: 408px;
     height: auto;
   }
-} */
+}
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
 
-  width: 408px;
+  max-width: 392px;
   height: 579px;
   border-radius: 4px;
 
