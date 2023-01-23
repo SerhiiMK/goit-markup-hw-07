@@ -92,8 +92,6 @@ img {
 /* ---------------------HEADER-------------- */
 
 .header-style {
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
   box-shadow: 6px 0px 1px rgba(46, 47, 66, 0.08), 1px 0px 1px rgba(46, 47, 66, 0.16),
     1px 0px 2px rgba(46, 47, 66, 0.08);
 }
@@ -165,10 +163,6 @@ header .container {
 }
 /* -------------------HEADER MOBIL -------------------- */
 @media screen and (max-width: 767px) {
-  /* .container: {
-    width: 767px;
-  } */
-
   .nav-transition {
     display: none;
   }
@@ -357,7 +351,7 @@ header .container {
   header .container {
     display: flex;
     align-items: center;
-      height: 70px;
+    height: 70px;
     max-width: 1158px;
   }
 
@@ -379,7 +373,7 @@ header .container {
     margin-bottom: 10px;
     margin-left: auto;
   }
-  
+
   .navigation-style {
     color: var(--navyblue);
     font: var(--primary-font), sans-serif;
@@ -1358,12 +1352,23 @@ header .container {
   .teem-workers-flex {
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 72px;
+    row-gap: 64px;
   }
 
   /* .workers-bg-color:not(:last-child) {
     margin-bottom: 72px;
   } */
+  .teem-workers-flex {
+    flex-wrap: wrap;
+  }
+
+  .teem-workers-flex {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .workers-bg-color:nth-child(2n + 1) {
+    margin-right: 24px;
+  }
 }
 
 /* ------------------AND mobil Our Team----------------- */
@@ -1423,7 +1428,6 @@ header .container {
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .profile {
     padding-top: 60px;
@@ -1456,7 +1460,6 @@ header .container {
 
 /* ------------------AND DESCTOP Our Team----------------- */
 /* -----------------MOBIL Customers------------- */
-
 
 .section-customers {
   padding-top: 120px;
@@ -1502,20 +1505,26 @@ header .container {
   fill: currentColor;
 }
 
-
 @media screen and (max-width: 767px) {
+  .container {
+      max-width: 428px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   .customers-list {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  row-gap: 72px;
-}
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: 72px;
+  }
 }
 
 /* -----------------AND MOBIL Customers------------- */
 /* -----------------TABLET Customers------------- */
-
 
 @media screen and (min-width: 768px) {
   .customers-list {
@@ -1525,13 +1534,11 @@ header .container {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-
     margin: auto;
   }
 }
 
-
- /* -----------------AND TABLET Customers------------- */
+/* -----------------AND TABLET Customers------------- */
 /* -----------------DESCTOP Customers------------- */
 
 @media screen and (min-width: 1200px) {
@@ -1544,12 +1551,11 @@ header .container {
   }
 
   .customers-list {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
 }
 /* -----------------AND DESCTOP Customers------------- */
 /* ----------------------------------------FOOTER-------------- */
@@ -1557,9 +1563,6 @@ header .container {
 .end-page > .container {
   display: flex;
   flex-direction: row;
-  /* flex-direction: column; */
-  /* display: flex;
-  flex-wrap: wrap; */
 }
 
 .end-page {
@@ -1567,10 +1570,6 @@ header .container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
-/* .subscribe-footer {
-  margin-left: 80px;
-} */
 
 .logo-studio-end-page {
   text-transform: uppercase;
@@ -1580,12 +1579,6 @@ header .container {
   font-size: 18px;
   line-height: 1.2;
 }
-
-/* .subscribe-button-form {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-} */
 
 .end-page-text {
   color: var(--cornflower);
@@ -1733,7 +1726,6 @@ header .container {
     margin-bottom: 72px;
   }
 
- 
   .social-media-list {
     display: flex;
     justify-content: center;

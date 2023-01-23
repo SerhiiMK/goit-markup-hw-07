@@ -20,31 +20,29 @@
   </head>
   <body class="primary-style">
     <header class="header-style header-shadow">
-      <div class="container logoburger">
-
-            <a href="./index.html">
-              <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
-            >
-            
-
+      <div class="container">
+        <nav class="burger container logo-trans-contacts">
+          <!-- <nav class="nav-logo-transition"> -->
+          <a href="./index.html">
+            <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
+          >
           <ul class="nav-transition list">
             <li class="item">
-              <a class="transition link-line underline" href="./index.html">Studio</a>
+              <a class="transition link-line" href="./index.html">Studio</a>
             </li>
             <li class="item">
-              <a class="transition link-line" href="./portfolio.html">Portfolio</a>
+              <a class="transition link-line underline" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="item">
               <a class="transition link-line" href="#">Contacts</a>
             </li>
           </ul>
           <button type="button" class="button-mobil js-open-menu">
-              <svg class="button-mobil-svg" aria-label="mobile menu switch">
-                <use class="modal-menu-svg" href="./img/webstudio-svg.svg#modal-menu"></use>
-              </svg>
-            </button>
+            <svg class="button-mobil-svg" aria-label="mobile menu switch">
+              <use class="modal-menu-svg" href="./img/webstudio-svg.svg#modal-menu"></use>
+            </svg>
+          </button>
         </nav>
-
         <ul class="contacts-style-item">
           <li class="list item">
             <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -56,21 +54,21 @@
       </div>
       <!-- --------------mobil-modal------- -->
       <div class="mobil-modal js-menu-container">
-        <button type="button" class="button-mobil-close js-close-menu">
+        <button type="button" class="button-modal-close js-close-menu">
           <svg class="hero-close-link" aria-label="mobile menu switch">
             <use class="modal-close-svg" href="./img/webstudio-svg.svg#button-close"></use>
           </svg>
         </button>
         <ul class="mobil-modal-transition list">
           <li class="mobil-modal-transition-item">
-            <a class="mobil-modal-transition-link link-line underline" href="./index.html"
+            <a
+              class="mobil-modal-transition-link link-line underline"
+              href="./index.html"
               >Studio</a
             >
           </li>
           <li class="mobil-modal-transition-item">
-            <a class="mobil-modal-transition-link link-line active-page" href="./portfolio.html"
-              >Portfolio</a
-            >
+            <a class="mobil-modal-transition-link link-line  active-page" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="mobil-modal-transition-item">
             <a class="mobil-modal-transition-link link-line" href="#">Contacts</a>
@@ -395,7 +393,7 @@
         </div>
       </div>
     </footer>
-        <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
