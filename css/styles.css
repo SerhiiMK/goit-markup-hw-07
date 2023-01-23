@@ -163,6 +163,14 @@ header .container {
 }
 /* -------------------HEADER MOBIL -------------------- */
 @media screen and (max-width: 767px) {
+  .container {
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .nav-transition {
     display: none;
   }
@@ -190,9 +198,6 @@ header .container {
 /* -------------TABLET HEADER ------------------ */
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-style .container {
-    width: 768px;
-  }
   .container-test {
     display: flex;
     align-items: center;
@@ -207,7 +212,7 @@ header .container {
     display: none;
   }
 
-  eader .container {
+  header .container {
     width: 736px;
   }
 
@@ -216,9 +221,6 @@ header .container {
     align-items: center;
   }
 
-  .nav-transition .item + .item {
-    /* margin-left: 40px; */
-  }
   .nav-transition {
     display: flex;
     margin-left: 123px;
@@ -330,10 +332,7 @@ header .container {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
-  }
-
-  .logo-trans-contacts {
+    max-width: 1158px;
   }
 
   header .logo-trans-contacts {
@@ -359,9 +358,6 @@ header .container {
     display: none;
   }
 
-  .nav-transition .item + .item {
-    /* margin-left: 40px; */
-  }
   .nav-transition {
     display: flex;
     margin-left: 123px;
@@ -551,6 +547,7 @@ header .container {
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic-bezier);
 }
+
 .hero-close-link {
   width: 8px;
   height: 8px;
@@ -606,7 +603,9 @@ header .container {
     background-color: transparent;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
   }
+
   .mobil-modal {
     position: fixed;
     display: flex;
@@ -640,8 +639,6 @@ header .container {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    /* line-height: 95%; */
-    /* letter-spacing: 0.02em; */
     color: var(--navyblue);
     transition-property: color;
     transition-duration: 250ms;
@@ -683,7 +680,7 @@ header .container {
 
   .mobil-modal-mailtel .mobil-modal-mailtel-tel {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .mobil-modal-mailtel-email {
@@ -702,6 +699,12 @@ header .container {
   .mobil-modal-mailtel-email:hover,
   .mobil-modal-mailtel-email:focus {
     color: var(--irish);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobil-modal-mailtel-tel {
+    font-size: 24px;
   }
 }
 
@@ -810,6 +813,12 @@ header .container {
   border-color: none;
 }
 
+/* @media screen and (min-width: 408px) {
+  .modal {
+    max-width: 408px;
+    height: auto;
+  }
+} */
 .modal {
   position: absolute;
   top: 50%;
@@ -1070,6 +1079,10 @@ header .container {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
   .hero {
     max-width: 100%;
     padding-bottom: 108px;
@@ -1163,6 +1176,14 @@ header .container {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .title-item {
     text-align: center;
   }
@@ -1349,6 +1370,14 @@ header .container {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .teem-workers-flex {
     justify-content: center;
     flex-wrap: wrap;
@@ -1507,20 +1536,19 @@ header .container {
 
 @media screen and (max-width: 767px) {
   .container {
-      max-width: 428px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .customers-list {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    row-gap: 72px;
-  }
+}
+.customers-list {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  row-gap: 72px;
 }
 
 /* -----------------AND MOBIL Customers------------- */
@@ -1700,6 +1728,14 @@ header .container {
 
 /* ------------------AND MOBIL FOOOTER--------------- */
 @media screen and (max-width: 767px) {
+  .container {
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .end-page > .container {
     display: flex;
     flex-direction: row;
@@ -1807,7 +1843,12 @@ header .container {
 
 /* ------------------AND TABLET FOOOTER--------------- */
 /* ------------------DESCTOP FOOOTER--------------- */
+/* @media screen and (min-width: 1200px) { */
 @media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+
   .logosocial {
     display: flex;
     flex-direction: row;
